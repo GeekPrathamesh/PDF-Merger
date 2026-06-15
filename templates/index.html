@@ -1,143 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>PDFX - Premium PDF Merger</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Merge 2 PDF Files Online Free | PDFX PDF Merger</title>
+    <meta
+      name="description"
+      content="Merge 2 PDF files instantly online for free. Fast, secure and easy PDF merger. Combine multiple PDF documents into one file with PDFX."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            light: '#38bdf8',
-                            accent: '#818cf8'
-                        }
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                dark: "#0f172a",
+                light: "#38bdf8",
+                accent: "#818cf8",
+              },
+            },
+          },
+        },
+      };
     </script>
 
     <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientShift 8s ease infinite;
+      }
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
         }
-        .animate-gradient {
-            background-size: 200% 200%;
-            animation: gradientShift 8s ease infinite;
+        50% {
+          background-position: 100% 50%;
         }
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        100% {
+          background-position: 0% 50%;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-gradient-to-br from-gray-900 via-slate-800 to-black min-h-screen text-slate-200 font-sans antialiased selection:bg-brand-light selection:text-white animate-gradient">
+  <body
+    class="bg-gradient-to-br from-gray-900 via-slate-800 to-black min-h-screen text-slate-200 font-sans antialiased selection:bg-brand-light selection:text-white animate-gradient"
+  >
+    <nav
+      class="fixed w-full z-50 glass-card border-b-0 border-white/5 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-light to-brand-accent tracking-tighter"
+            >
+              PDFX.
+            </a>
+          </div>
 
-    <nav class="fixed w-full z-50 glass-card border-b-0 border-white/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-light to-brand-accent tracking-tighter">
-                        PDFX.
-                    </a>
-                </div>
-                
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-brand-light transition">Home</a>
-                        <a href="#" class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Tools</a>
-                        <a href="#" class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
-                        <a href="#" class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">API</a>
-                    </div>
-                </div>
-
-                <div class="hidden md:flex items-center gap-4">
-                    <button class="bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-medium transition border border-white/10">
-                        Sign In
-                    </button>
-                </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="#"
+                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-brand-light transition"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition"
+                >Tools</a
+              >
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition"
+                >Pricing</a
+              >
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition"
+                >API</a
+              >
             </div>
+          </div>
+
+          <div class="hidden md:flex items-center gap-4">
+            <button
+              class="bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-medium transition border border-white/10"
+            >
+              Sign In
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
 
-    <main class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center min-h-screen">
-        
-        <div class="text-center mb-12 max-w-2xl">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                Merge your PDFs with <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-light to-brand-accent">Precision.</span>
-            </h1>
-            <p class="text-slate-400 text-lg">
-                Combine multiple documents into a single, organized file in seconds. Secure, fast, and entirely online.
-            </p>
+    <main
+      class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center min-h-screen"
+    >
+      <div class="text-center mb-12 max-w-2xl">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight"
+        >
+          Merge 2 PDF Files Online Instantly with the
+
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-brand-light to-brand-accent"
+            >Precision.</span
+          >
+        </h1>
+        <p class="text-slate-400 text-lg">
+          Combine multiple documents into a single, organized file in seconds.
+          Secure, fast, and entirely online.
+        </p>
+      </div>
+
+      <div
+        class="glass-card w-full max-w-xl p-8 rounded-3xl shadow-2xl relative overflow-hidden"
+      >
+        <div
+          class="absolute -top-24 -right-24 w-48 h-48 bg-brand-accent/20 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-24 -left-24 w-48 h-48 bg-brand-light/20 rounded-full blur-3xl"
+        ></div>
+
+        <form
+          method="post"
+          action="/merge"
+          enctype="multipart/form-data"
+          class="relative z-10"
+        >
+          <div class="mb-8">
+            <label
+              for="pdf-upload"
+              class="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed border-slate-600 rounded-2xl cursor-pointer bg-slate-800/30 hover:bg-slate-700/50 hover:border-brand-light transition duration-300 group"
+            >
+              <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <svg
+                  class="w-12 h-12 mb-4 text-slate-400 group-hover:text-brand-light transition duration-300"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 16"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                  />
+                </svg>
+                <p class="mb-2 text-sm text-slate-300 font-semibold">
+                  <span class="text-brand-light">Click to upload</span> or drag
+                  and drop
+                </p>
+                <p class="text-xs text-slate-500">
+                  Only PDF files are supported
+                </p>
+              </div>
+              <input
+                id="pdf-upload"
+                type="file"
+                name="pdfs"
+                class="hidden"
+                multiple
+                accept=".pdf"
+                required
+                onchange="updateFileName(this)"
+              />
+            </label>
+          </div>
+
+          <div
+            id="file-name-display"
+            class="text-center text-sm text-brand-light mb-6 hidden font-medium"
+          ></div>
+
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white font-bold py-4 px-8 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)] transition-all duration-300 transform hover:-translate-y-1"
+          >
+            Merge Documents
+          </button>
+        </form>
+      </div>
+
+      <div class="mt-12 flex items-center gap-6 text-slate-500 text-sm">
+        <div class="flex items-center gap-2">
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7z"
+            ></path>
+          </svg>
+          <span>256-bit Encryption</span>
         </div>
-
-        <div class="glass-card w-full max-w-xl p-8 rounded-3xl shadow-2xl relative overflow-hidden">
-            
-            <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-accent/20 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-brand-light/20 rounded-full blur-3xl"></div>
-
-            <form method="post" action="/merge" enctype="multipart/form-data" class="relative z-10">
-                
-                <div class="mb-8">
-                    <label for="pdf-upload" class="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed border-slate-600 rounded-2xl cursor-pointer bg-slate-800/30 hover:bg-slate-700/50 hover:border-brand-light transition duration-300 group">
-                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                            <svg class="w-12 h-12 mb-4 text-slate-400 group-hover:text-brand-light transition duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
-                            </svg>
-                            <p class="mb-2 text-sm text-slate-300 font-semibold"><span class="text-brand-light">Click to upload</span> or drag and drop</p>
-                            <p class="text-xs text-slate-500">Only PDF files are supported</p>
-                        </div>
-                        <input id="pdf-upload" type="file" name="pdfs" class="hidden" multiple accept=".pdf" required onchange="updateFileName(this)" />
-                    </label>
-                </div>
-                
-                <div id="file-name-display" class="text-center text-sm text-brand-light mb-6 hidden font-medium"></div>
-
-                <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white font-bold py-4 px-8 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)] transition-all duration-300 transform hover:-translate-y-1">
-                    Merge Documents
-                </button>
-
-            </form>
+        <div class="flex items-center gap-2">
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+            ></path>
+          </svg>
+          <span>Auto-deleted after 1 hour</span>
         </div>
-        
-        <div class="mt-12 flex items-center gap-6 text-slate-500 text-sm">
-            <div class="flex items-center gap-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7z"></path></svg>
-                <span>256-bit Encryption</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-                <span>Auto-deleted after 1 hour</span>
-            </div>
-        </div>
+      </div>
     </main>
 
     <script>
-        function updateFileName(input) {
-            const display = document.getElementById('file-name-display');
-            if (input.files && input.files.length > 0) {
-                display.classList.remove('hidden');
-                display.innerText = `${input.files.length} file(s) selected`;
-            } else {
-                display.classList.add('hidden');
-            }
+      function updateFileName(input) {
+        const display = document.getElementById("file-name-display");
+        if (input.files && input.files.length > 0) {
+          display.classList.remove("hidden");
+          display.innerText = `${input.files.length} file(s) selected`;
+        } else {
+          display.classList.add("hidden");
         }
+      }
     </script>
-</body>
+  </body>
 </html>
